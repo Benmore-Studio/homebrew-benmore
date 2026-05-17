@@ -1,13 +1,13 @@
 class Benmore < Formula
   desc "The web framework for AI-driven development"
   homepage "https://benmore.ai"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Benmore-Studio/benmore-releases/releases/download/v2.1.0/benmore-darwin-arm64.tar.gz"
-      sha256 "2c81e3683ce857baa5e84e15f2fe96bc9085a1fcb18073c94c2ecb28b826bbd9"
+      url "https://github.com/Benmore-Studio/benmore-releases/releases/download/v2.1.1/benmore-darwin-arm64.tar.gz"
+      sha256 "ef784c23ddeccf9568495fe933111d1dba11f87d8d4c695adf3ae1f871befb99"
     end
   end
 
@@ -18,6 +18,6 @@ class Benmore < Formula
   end
 
   test do
-    assert_match "benmore 2.1.0", shell_output("#{bin}/benmore version")
+    assert_match "benmore 2.1.1", shell_output("#{bin}/benmore version")
   end
 end
