@@ -25,7 +25,7 @@ cask "benmore" do
   end
 
   name "benmore"
-  desc "Build a Benmore app locally and deploy it to benmore.ai — one Go binary"
+  desc "Build a Benmore app locally and deploy it to benmore.ai - one Go binary"
   homepage "https://benmore.ai"
 
   livecheck do
