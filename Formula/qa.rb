@@ -9,7 +9,7 @@ class Qa < Formula
   depends_on "node"
 
   def install
-    libexec.install Dir["automated-qa/*"]
+    libexec.install Dir["*"]
     bin.write_exec_script libexec/"bin/qa.mjs"
     mv bin/"qa.mjs", bin/"qa"
     bin.install_symlink "qa" => "automated-qa"
