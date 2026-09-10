@@ -1,8 +1,8 @@
 class Qa < Formula
   desc "Evidence-first frontend verification CLI"
   homepage "https://github.com/Benmore-Studio/automated-qa"
-  url "https://github.com/Benmore-Studio/automated-qa/releases/download/v0.10.2/automated-qa-v0.10.2-darwin-universal.tar.gz"
-  sha256 "ed1764d1894b22ca74edb8d246831a8d52270dce4ae5a2b3d94ed1f357d6ed88"
+  url "https://github.com/Benmore-Studio/automated-qa/releases/download/v0.10.3/automated-qa-v0.10.3-darwin-universal.tar.gz"
+  sha256 "2eebd4ecd8d588a32734f02518d76b8a0a3f87729e871043db45b7daac3184c4"
   license :cannot_represent
 
   depends_on :macos
@@ -16,7 +16,7 @@ class Qa < Formula
   end
 
   test do
-    assert_match "automated-qa 0.10.2", shell_output("#{bin}/qa --version")
+    assert_match "automated-qa 0.10.3", shell_output("#{bin}/qa --version")
     assert_match "evidence-first frontend verification", shell_output("#{bin}/automated-qa --help")
   end
 end
