@@ -5,8 +5,8 @@ class Qa < Formula
   sha256 "ed1764d1894b22ca74edb8d246831a8d52270dce4ae5a2b3d94ed1f357d6ed88"
   license :cannot_represent
 
-  depends_on "node"
   depends_on :macos
+  depends_on "node"
 
   def install
     libexec.install Dir["automated-qa/*"]
