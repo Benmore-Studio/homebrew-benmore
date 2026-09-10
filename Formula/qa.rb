@@ -4,8 +4,8 @@ require "json"
 class Qa < Formula
   desc "Evidence-first frontend verification CLI"
   homepage "https://github.com/Benmore-Studio/automated-qa"
-  url "https://github.com/Benmore-Studio/automated-qa/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "95de709345d325f6f2f47abc5625ba8a682f32e5b19379e3dffc62bd9f64144f"
+  url "https://github.com/Benmore-Studio/automated-qa/archive/refs/tags/v0.10.1.tar.gz"
+  sha256 "cc73c952b7273e5b13e38ece3df13937642312e18424f26f604a8f2a9767d98d"
   license "Apache-2.0"
 
   depends_on "rust" => :build
@@ -41,7 +41,7 @@ class Qa < Formula
   end
 
   test do
-    assert_match "automated-qa 0.10.0", shell_output("#{bin}/qa --version")
+    assert_match "automated-qa 0.10.1", shell_output("#{bin}/qa --version")
     assert_match "evidence-first frontend verification", shell_output("#{bin}/automated-qa --help")
   end
 end
