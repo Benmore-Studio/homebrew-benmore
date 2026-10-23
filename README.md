@@ -23,3 +23,13 @@ brew uninstall --cask benmore
 ```
 
 This tap contains only Homebrew casks. It does not install Benmore framework source or manage app deployments.
+
+## Ebb Space
+
+[Ebb Space](https://www.ebbspace.com/) shows what fills your Mac and frees space safely. The cask installs the app and links its `ebb` command:
+
+```sh
+brew install --cask benmore-studio/benmore/ebb-space
+```
+
+The app updates itself; `brew upgrade --cask ebb-space` also works.
